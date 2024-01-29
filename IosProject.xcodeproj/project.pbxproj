@@ -18,6 +18,7 @@
 		BAD0D13C2B5EBB4500EB3E90 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D13B2B5EBB4500EB3E90 /* ViewModel.swift */; };
 		BAD7622E2B67EB2F00F6589C /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7622D2B67EB2F00F6589C /* ListRow.swift */; };
 		BAD762302B67EBD300F6589C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7622F2B67EBD300F6589C /* Event.swift */; };
+		BAD762322B67F1D100F6589C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD762312B67F1D100F6589C /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BAD0D13B2B5EBB4500EB3E90 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BAD7622D2B67EB2F00F6589C /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		BAD7622F2B67EBD300F6589C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BAD762312B67F1D100F6589C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				BAD7622D2B67EB2F00F6589C /* ListRow.swift */,
 				BAD0D1052B5EA69200EB3E90 /* ContentView.swift */,
+				BAD762312B67F1D100F6589C /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				BAD0D1062B5EA69200EB3E90 /* ContentView.swift in Sources */,
 				BAD0D13A2B5EBA9D00EB3E90 /* Schedule.swift in Sources */,
 				BAD0D13C2B5EBB4500EB3E90 /* ViewModel.swift in Sources */,
+				BAD762322B67F1D100F6589C /* DetailView.swift in Sources */,
 				BAD0D1042B5EA69200EB3E90 /* IosProjectApp.swift in Sources */,
 				BAD762302B67EBD300F6589C /* Event.swift in Sources */,
 				BAD7622E2B67EB2F00F6589C /* ListRow.swift in Sources */,
