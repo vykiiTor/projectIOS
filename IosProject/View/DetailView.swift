@@ -47,13 +47,20 @@ struct DetailView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.green, lineWidth: 1)
                         )
+                    
+                    ScrollView{
+                        Text(event.notes ?? "")
+                            .padding()
+                            .foregroundColor(.black)
+                    }
+
                 }
                 .padding()
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
                 .padding()
             }
-            .background(Color.clear) // Set the background color here
+            .background(Color.clear)
         }
         .navigationTitle(event.eventName)
     }
