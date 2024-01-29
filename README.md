@@ -1,5 +1,8 @@
 # Mobile Application Project: TechToTech Conference
 
+## Run the project:
+the working branch should be FinalCommit. In order to access it, open a terminal (VSCode terminal for example) clone the project and change the branch, open xchose and verify that you are on the right branch and run the project using XCode
+
 ## Project Overview
 
 ### Team Members:
