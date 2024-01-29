@@ -55,7 +55,7 @@ protocol RequestFactoryProtocol {
 
 class RequestFactory: RequestFactoryProtocol {
     internal func createRequest(urlStr: String) -> URLRequest {
-        var url: URL = URL(string: urlStr)!
+        let url: URL = URL(string: urlStr)!
 
         var request = URLRequest(url: url)
         request.timeoutInterval = 100
