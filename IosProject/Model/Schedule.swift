@@ -19,8 +19,12 @@ struct Schedule: Codable {
 }
 struct Fields: Codable {
     let name: String
+    let start: String
+    let end: String
     enum CodingKeys : String, CodingKey{
         case name = "Activity"
+        case start =  "Start"
+        case end = "End"
     }
 }
 

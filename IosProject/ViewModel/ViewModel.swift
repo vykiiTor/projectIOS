@@ -1,7 +1,7 @@
 // Controller
 import Foundation
 
-
+let EVENT_TEST = Event(id: "Community building workshop", eventName: "reczHBF34pEPqZ9vY", start: " 2024-02-09T13:20:00.000Z", end: "  2024-02-09T14:00:00.000Z")
 
 class ViewModel : ObservableObject{
     let requestFactory = RequestFactory()
