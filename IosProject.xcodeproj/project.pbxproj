@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BAD0D1042B5EA69200EB3E90 /* IosProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D1032B5EA69200EB3E90 /* IosProjectApp.swift */; };
 		BAD0D1062B5EA69200EB3E90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D1052B5EA69200EB3E90 /* ContentView.swift */; };
-		BAD0D1082B5EA69400EB3E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD0D1072B5EA69400EB3E90 /* Assets.xcassets */; };
 		BAD0D10B2B5EA69400EB3E90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD0D10A2B5EA69400EB3E90 /* Preview Assets.xcassets */; };
 		BAD0D1152B5EA69500EB3E90 /* IosProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D1142B5EA69500EB3E90 /* IosProjectTests.swift */; };
 		BAD0D11F2B5EA69500EB3E90 /* IosProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D11E2B5EA69500EB3E90 /* IosProjectUITests.swift */; };
@@ -42,7 +41,6 @@
 		BAD0D1002B5EA69200EB3E90 /* IosProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD0D1032B5EA69200EB3E90 /* IosProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosProjectApp.swift; sourceTree = "<group>"; };
 		BAD0D1052B5EA69200EB3E90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BAD0D1072B5EA69400EB3E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD0D10A2B5EA69400EB3E90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAD0D1102B5EA69500EB3E90 /* IosProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD0D1142B5EA69500EB3E90 /* IosProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosProjectTests.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				BAD0D1372B5EB01400EB3E90 /* ViewModel */,
 				BAD0D1362B5EAFD500EB3E90 /* Model */,
 				BAD0D1032B5EA69200EB3E90 /* IosProjectApp.swift */,
-				BAD0D1072B5EA69400EB3E90 /* Assets.xcassets */,
 				BAD0D1092B5EA69400EB3E90 /* Preview Content */,
 			);
 			path = IosProject;
@@ -271,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD0D10B2B5EA69400EB3E90 /* Preview Assets.xcassets in Resources */,
-				BAD0D1082B5EA69400EB3E90 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IosProject/Preview Content\"";
+				DEVELOPMENT_TEAM = QLEBHR9L8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -494,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IosProject/Preview Content\"";
+				DEVELOPMENT_TEAM = QLEBHR9L8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
