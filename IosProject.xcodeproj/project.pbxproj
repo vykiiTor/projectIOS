@@ -15,7 +15,7 @@
 		BAD0D11F2B5EA69500EB3E90 /* IosProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D11E2B5EA69500EB3E90 /* IosProjectUITests.swift */; };
 		BAD0D1212B5EA69500EB3E90 /* IosProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D1202B5EA69500EB3E90 /* IosProjectUITestsLaunchTests.swift */; };
 		BAD0D13A2B5EBA9D00EB3E90 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D1392B5EBA9D00EB3E90 /* Schedule.swift */; };
-		BAD0D13C2B5EBB4500EB3E90 /* RequestFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D13B2B5EBB4500EB3E90 /* RequestFactoryProtocol.swift */; };
+		BAD0D13C2B5EBB4500EB3E90 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0D13B2B5EBB4500EB3E90 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		BAD0D11E2B5EA69500EB3E90 /* IosProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosProjectUITests.swift; sourceTree = "<group>"; };
 		BAD0D1202B5EA69500EB3E90 /* IosProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BAD0D1392B5EBA9D00EB3E90 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		BAD0D13B2B5EBB4500EB3E90 /* RequestFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryProtocol.swift; sourceTree = "<group>"; };
+		BAD0D13B2B5EBB4500EB3E90 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +144,7 @@
 		BAD0D1372B5EB01400EB3E90 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BAD0D13B2B5EBB4500EB3E90 /* RequestFactoryProtocol.swift */,
+				BAD0D13B2B5EBB4500EB3E90 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 			files = (
 				BAD0D1062B5EA69200EB3E90 /* ContentView.swift in Sources */,
 				BAD0D13A2B5EBA9D00EB3E90 /* Schedule.swift in Sources */,
-				BAD0D13C2B5EBB4500EB3E90 /* RequestFactoryProtocol.swift in Sources */,
+				BAD0D13C2B5EBB4500EB3E90 /* ViewModel.swift in Sources */,
 				BAD0D1042B5EA69200EB3E90 /* IosProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

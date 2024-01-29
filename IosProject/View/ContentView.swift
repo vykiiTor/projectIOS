@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var viewModel: ViewModel
+    @State var viewModel: ViewModel  = ViewModel()
     var body: some View {
         VStack {
             Image(systemName: "globe")

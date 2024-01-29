@@ -1,19 +1,26 @@
-
-
-
 // Controller
-let requestFactory = RequestFactory()
-requestFactory.getFurnitureList { (errorHandle, furnitures) in
-if let _ = errorHandle.errorType, let errorMessage =
-errorHandle.errorMessage {
-print(errorMessage)
-}
-else if let list = furnitures {
-for furniture in list {
-print(furniture.fields.name)
-}
-}
-else {
-print("Houston we got a problem")
-}
+import Foundation
+
+
+
+class ViewModel : ObservableObject{
+    let requestFactory = RequestFactory()
+    
+    init() {
+        self.getData()
+    }
+    
+    private func getData() {
+        let truc = requestFactory.getScheduleList { (errorHandle, schedules) in
+            if let errorType = errorHandle.errorType, let errorMessage = errorHandle.errorMessage {
+                print(errorMessage)
+            } else if let list = schedules {
+                for schedule in list {
+                    print(schedule.fields.name)
+                }
+            } else {
+                print("Houston we got a problem")
+            }
+        }
+    }
 }
