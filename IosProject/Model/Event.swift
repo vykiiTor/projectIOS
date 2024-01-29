@@ -12,13 +12,14 @@ class Event: Decodable, ObservableObject {
     let eventName: String
     let start: String
     let end: String
+    let notes: String
     
-    
-    init(id: String, eventName: String, start: String, end: String) {
+    init(id: String, eventName: String, start: String, end: String, notes: String) {
         self.id = id
         self.eventName = eventName
         self.start = start
         self.end = end
+        self.notes = notes
     }
 }
 

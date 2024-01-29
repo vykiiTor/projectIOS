@@ -11,9 +11,10 @@ struct ListRow: View {
     var event: Event
 
     var body: some View {
+        
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text("Event Name: \(event.eventName)")
+                Text(" \(event.eventName)")
                     .font(.headline)
             }
             Spacer()

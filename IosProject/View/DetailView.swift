@@ -1,9 +1,3 @@
-//
-//  DetailView.swift
-//  IosProject
-//
-//  Created by Victor  TRAN on 29/01/2024.
-//
 import SwiftUI
 
 struct DetailView: View {
@@ -26,11 +20,13 @@ struct DetailView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.blue, lineWidth: 1)
                         )
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
                     
                     Divider()
-                    Text("The event starts at :")
+                    
+                    Text("The event schedule from:")
                         .font(.headline)
-                    Text(event.start)
+                    Text(formatTime(event.start))
                         .padding()
                         .background(Color.green)
                         .foregroundColor(.white)
@@ -39,11 +35,10 @@ struct DetailView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.green, lineWidth: 1)
                         )
-                    Divider()
                     
-                    Text("The event ends at :")
+                    Text("to :")
                         .font(.headline)
-                    Text(event.end)
+                    Text(formatTime(event.end))
                         .padding()
                         .background(Color.green)
                         .foregroundColor(.white)
@@ -69,3 +64,30 @@ struct DetailView_Previews: PreviewProvider {
         DetailView(event: EVENT_TEST)
     }
 }
+
+private func formatDate(_ dateString: String) -> String {
+    let isoDateFormatter = ISO8601DateFormatter()
+    isoDateFormatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+
+    if let date = isoDateFormatter.date(from: dateString) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        return dateFormatter.string(from: date)
+    } else {
+        return "Invalid Date"
+    }
+}
+
+private func formatTime(_ dateString: String) -> String {
+    let isoDateFormatter = ISO8601DateFormatter()
+    isoDateFormatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+
+    if let date = isoDateFormatter.date(from: dateString) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mma"
+        return dateFormatter.string(from: date)
+    } else {
+        return "Invalid Time"
+    }
+}
+

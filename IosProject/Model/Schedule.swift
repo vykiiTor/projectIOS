@@ -21,10 +21,12 @@ struct Fields: Codable {
     let name: String
     let start: String
     let end: String
+    let notes: String?
     enum CodingKeys : String, CodingKey{
         case name = "Activity"
         case start =  "Start"
         case end = "End"
+        case notes = "Notes"
     }
 }
 
