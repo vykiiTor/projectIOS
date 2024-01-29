@@ -15,10 +15,6 @@ struct ListRow: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Event Name: \(event.eventName)")
                     .font(.headline)
-                Text("Start: \(event.start)")
-                    .font(.subheadline)
-                Text("End: \(event.end)")
-                    .font(.subheadline)
             }
             Spacer()
         }

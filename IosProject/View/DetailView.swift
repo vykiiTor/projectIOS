@@ -17,7 +17,7 @@ struct DetailView: View {
         GeometryReader { geo in
             VStack {
                 VStack {
-                    Text(event.id)
+                    Text(event.eventName)
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -28,21 +28,30 @@ struct DetailView: View {
                         )
                     
                     Divider()
+                    Text("The event starts at :")
+                        .font(.headline)
+                    Text(event.start)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(5)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.green, lineWidth: 1)
+                        )
+                    Divider()
                     
-                    ScrollView {
-                        Text(event.start)
-                            .padding()
-                            .background(Color.green)
-                            .foregroundColor(.white)
-                            .cornerRadius(5)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.green, lineWidth: 1)
-                            )
-                    }
-                    .frame(height: geo.size.height / 3)
-                    .padding()
-                    .cornerRadius(5)
+                    Text("The event ends at :")
+                        .font(.headline)
+                    Text(event.end)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(5)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.green, lineWidth: 1)
+                        )
                 }
                 .padding()
                 .background(Color.gray.opacity(0.2))

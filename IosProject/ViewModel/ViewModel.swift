@@ -6,17 +6,19 @@ let EVENT_TEST = Event(id: "reczHBF34pEPqZ9vY", eventName: "Community building w
 class ViewModel : ObservableObject{
     let requestFactory = RequestFactory()
     
+    @Published var eventArray: [Event] = []
+    
     init() {
         self.getData()
     }
     
     private func getData() {
-        let truc = requestFactory.getScheduleList { (errorHandle, schedules) in
-            if let errorType = errorHandle.errorType, let errorMessage = errorHandle.errorMessage {
+        requestFactory.getScheduleList { (errorHandle, schedules) in
+            if let _ = errorHandle.errorType, let errorMessage = errorHandle.errorMessage {
                 print(errorMessage)
             } else if let list = schedules {
                 for schedule in list {
-                    print(schedule.fields.name)
+                    self.eventArray.append(Event(id: schedule.id, eventName: schedule.fields.name ,start: schedule.fields.start , end: schedule.fields.end))
                 }
             } else {
                 print("Houston we got a problem")
@@ -24,3 +26,4 @@ class ViewModel : ObservableObject{
         }
     }
 }
+
